@@ -21,7 +21,7 @@ public class textFieldPlayer implements EventHandler<KeyEvent>{
 			ColorPicker cp = (ColorPicker) parent.getChildren().get(2);
 			cp.setValue(Color.web("0x" + old.substring(1, old.length())));
 			
-			//Maj de RGB/TSL si le menu est d�rouler			
+			//Maj de RGB/TSL si le menu est dérouler			
 			try {
 				VBox superParent = (VBox) parent.getParent();
 				HBox hbScroll = (HBox) superParent.getChildren().get(2);
@@ -38,7 +38,7 @@ public class textFieldPlayer implements EventHandler<KeyEvent>{
 				((TextField) vbTsl.getChildren().get(6)).setText("" + cp.getValue().getBrightness() )  ;
 
 			} catch (Exception e) {
-				System.out.println("Bouton non d�roul�");
+				System.out.println("Bouton non déroulé");
 			}
 			
 		} catch (Exception e) {
